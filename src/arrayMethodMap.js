@@ -4,7 +4,7 @@
  * Implement method Map
  */
 function applyCustomMap() {
-  [].__proto__.map2 = function() {
+  [].__proto__.map2 = function(callback) {
     // write code here
   };
 }
