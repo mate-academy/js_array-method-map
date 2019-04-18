@@ -4,8 +4,12 @@
  * Implement method Map
  */
 function applyCustomMap() {
-  [].__proto__.map2 = function() {
-    // write code here
+  [].__proto__.map2 = function(callback) {
+    const newArr = [];
+    for (let i = 0; i < this.length; i++) {
+      newArr.push(callback(this[i], i, this));
+    }
+    return newArr;
   };
 }
 
