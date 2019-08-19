@@ -10,6 +10,7 @@ function applyCustomMap() {
     for (let i = 0; i < this.length; i++) {
       mapedArray.push(callback(this[i], i, this));
     }
+
     return mapedArray;
   };
 }
