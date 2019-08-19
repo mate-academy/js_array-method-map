@@ -5,7 +5,7 @@
  */
 function applyCustomMap() {
   [].__proto__.map2 = function(callback) {
-    const resultOfMap = [];
+    const map = [];
 
     for (let i = 0; i < this.length; i++) {
       resultOfMap[i] = callback(this[i], i, this);
