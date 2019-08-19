@@ -6,8 +6,8 @@
 function applyCustomMap() {
   [].__proto__.map2 = function(callback) {
     const mapArr = [];
-    for (let i = 0; i < this.length; i++) {
-      mapArr[i] = callback(this[i], i, this);
+    for (let index = 0; index < this.length; index++) {
+      mapArr[index] = callback(this[index], index, this);
     }
     return mapArr;
   };
