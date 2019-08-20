@@ -6,12 +6,12 @@
 function applyCustomMap() {
   [].__proto__.map2 = function(callback) {
     // write code here
-    const Arr = [];
+    const arrOfMap = [];
     for (let i = 0; i < this.length; i++) {
-      Arr.push(callback(this[i], i, this));
+      arrOfMap.push(callback(this[i], i, this));
     }
 
-    return Arr;
+    return arrOfMap;
   };
 }
 
