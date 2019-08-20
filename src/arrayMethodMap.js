@@ -3,15 +3,16 @@
 /**
  * Implement method Map
  */
+
 function applyCustomMap() {
   [].__proto__.map2 = function(callback) {
     // write code here
-    const arrOfMap = [];
+    const mappedArr = [];
     for (let i = 0; i < this.length; i++) {
-      arrOfMap.push(callback(this[i], i, this));
+      mappedArr.push(callback(this[i], i, this));
     }
 
-    return arrOfMap;
+    return mappedArr;
   };
 }
 
