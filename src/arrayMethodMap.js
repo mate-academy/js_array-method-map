@@ -5,9 +5,12 @@
  */
 function applyCustomMap() {
   [].__proto__.map2 = function(callback) {
-    return this.reduce(function(elem, item, index, array) {
-      return elem.concat([ callback(item, index, array) ]);
-    }, []);
+    const arr = [];
+    for (let i = 0; i < this.length; i++) {
+      const mapped = callback(this[i], i, this);
+      arr.push(mapped);
+    }
+    return arr;
   };
 }
 
