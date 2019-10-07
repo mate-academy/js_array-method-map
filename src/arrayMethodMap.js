@@ -5,7 +5,14 @@
  */
 function applyCustomMap() {
   [].__proto__.map2 = function(callback) {
-    // write code here
+
+    const result = [];
+
+    this.forEach( (element, i, arr) => {
+      result.push(callback(element, i, arr));
+    });
+
+    return result;
   };
 }
 
