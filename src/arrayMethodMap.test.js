@@ -3,6 +3,7 @@
 const applyCustomMap = require('./arrayMethodMap');
 
 const source = [0, 10, 20, 30];
+
 applyCustomMap();
 
 test('`map2` is added to [].__proto__', () => {
