@@ -7,15 +7,15 @@ function applyCustomMap() {
   [].__proto__.map2 = function(callback) {
     if (!arguments) {
       return [this];
-    } else {
-      const result = [];
-
-      for (let i = 0; i < this.length; i++) {
-        result[i] = callback(this[i], i, this);
-      }
-
-      return result;
     }
+
+    const result = [];
+
+    for (let i = 0; i < this.length; i++) {
+      result[i] = callback(this[i], i, this);
+    }
+
+    return result;
   };
 }
 
