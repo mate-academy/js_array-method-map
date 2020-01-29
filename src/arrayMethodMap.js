@@ -15,9 +15,4 @@ function applyCustomMap() {
   };
 }
 
-applyCustomMap();
-
-const source = [1, 2, 3, 4, 5, 6];
-
-source.map2(x => x * 2);
 module.exports = applyCustomMap;
