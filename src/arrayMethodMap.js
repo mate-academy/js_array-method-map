@@ -8,7 +8,7 @@ function applyCustomMap() {
     const array = [];
 
     for (let i = 0; i < this.length; i++) {
-      array[array.length] = callback(this[i], i, this);
+      array.push(callback(this[i], i, this));
     }
 
     return array;
