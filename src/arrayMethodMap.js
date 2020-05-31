@@ -1,11 +1,18 @@
 'use strict';
-
+/* eslint-disable */
 /**
  * Implement method Map
  */
 function applyCustomMap() {
   [].__proto__.map2 = function(callback) {
-    // write code here
+    let o = 0;
+    const mapped = [];
+
+    for (let i = 0; i < this.length; i++) {
+      mapped[o] = callback(this[i], i, this);
+      o++;
+    }
+    return mapped;
   };
 }
 
