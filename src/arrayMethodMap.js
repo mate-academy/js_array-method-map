@@ -1,5 +1,5 @@
 'use strict';
-/* eslint-disable */
+
 /**
  * Implement method Map
  */
@@ -12,6 +12,7 @@ function applyCustomMap() {
       mapped[o] = callback(this[i], i, this);
       o++;
     }
+
     return mapped;
   };
 }
