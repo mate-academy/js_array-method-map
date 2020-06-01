@@ -15,7 +15,4 @@ function applyCustomMap() {
   };
 }
 
-// applyCustomFilter();
-// console.log([0, 10, 20, 30].filter2(a => a === 10));
-
 module.exports = applyCustomMap;
